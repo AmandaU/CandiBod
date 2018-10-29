@@ -1,0 +1,372 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AA5080622186DB4700B866F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA5080522186DB4700B866F4 /* Assets.xcassets */; };
+		AA5080632186DB4700B866F4 /* Audio in Resources */ = {isa = PBXBuildFile; fileRef = AA5080532186DB4700B866F4 /* Audio */; };
+		AA5080642186DB4700B866F4 /* WorkoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5080542186DB4700B866F4 /* WorkoutView.swift */; };
+		AA5080652186DB4700B866F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5080552186DB4700B866F4 /* AppDelegate.swift */; };
+		AA5080672186DB4700B866F4 /* CandibodLaunch.png in Resources */ = {isa = PBXBuildFile; fileRef = AA5080572186DB4700B866F4 /* CandibodLaunch.png */; };
+		AA5080682186DB4700B866F4 /* CandibodLaunch@3.png in Resources */ = {isa = PBXBuildFile; fileRef = AA5080582186DB4700B866F4 /* CandibodLaunch@3.png */; };
+		AA5080692186DB4700B866F4 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5080592186DB4700B866F4 /* TimerView.swift */; };
+		AA50806A2186DB4700B866F4 /* SizzlerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA50805A2186DB4700B866F4 /* SizzlerViewController.swift */; };
+		AA50806B2186DB4700B866F4 /* WorkoutDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA50805B2186DB4700B866F4 /* WorkoutDataSource.swift */; };
+		AA50806C2186DB4700B866F4 /* ExerciseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA50805C2186DB4700B866F4 /* ExerciseCell.swift */; };
+		AA50806D2186DB4700B866F4 /* CandibodLaunch@2.png in Resources */ = {isa = PBXBuildFile; fileRef = AA50805D2186DB4700B866F4 /* CandibodLaunch@2.png */; };
+		AA50806E2186DB4700B866F4 /* FullPageFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA50805E2186DB4700B866F4 /* FullPageFlowLayout.swift */; };
+		AA50806F2186DB4700B866F4 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA50805F2186DB4700B866F4 /* Extensions.swift */; };
+		AA5080702186DB4700B866F4 /* Candibod App-04.png in Resources */ = {isa = PBXBuildFile; fileRef = AA5080602186DB4700B866F4 /* Candibod App-04.png */; };
+		AA5829FB2186E0FB003D614D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA5829FA2186E0FB003D614D /* LaunchScreen.storyboard */; };
+		AA5829FD2186E103003D614D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA5829FC2186E103003D614D /* Main.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AA50803B2186DAF700B866F4 /* CandiBod.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CandiBod.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA5080502186DB4600B866F4 /* CandiBod-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CandiBod-Bridging-Header.h"; sourceTree = "<group>"; };
+		AA5080522186DB4700B866F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AA5080532186DB4700B866F4 /* Audio */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Audio; sourceTree = "<group>"; };
+		AA5080542186DB4700B866F4 /* WorkoutView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkoutView.swift; sourceTree = "<group>"; };
+		AA5080552186DB4700B866F4 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AA5080572186DB4700B866F4 /* CandibodLaunch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CandibodLaunch.png; sourceTree = "<group>"; };
+		AA5080582186DB4700B866F4 /* CandibodLaunch@3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CandibodLaunch@3.png"; sourceTree = "<group>"; };
+		AA5080592186DB4700B866F4 /* TimerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
+		AA50805A2186DB4700B866F4 /* SizzlerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SizzlerViewController.swift; sourceTree = "<group>"; };
+		AA50805B2186DB4700B866F4 /* WorkoutDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkoutDataSource.swift; sourceTree = "<group>"; };
+		AA50805C2186DB4700B866F4 /* ExerciseCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExerciseCell.swift; sourceTree = "<group>"; };
+		AA50805D2186DB4700B866F4 /* CandibodLaunch@2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CandibodLaunch@2.png"; sourceTree = "<group>"; };
+		AA50805E2186DB4700B866F4 /* FullPageFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FullPageFlowLayout.swift; sourceTree = "<group>"; };
+		AA50805F2186DB4700B866F4 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		AA5080602186DB4700B866F4 /* Candibod App-04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Candibod App-04.png"; sourceTree = "<group>"; };
+		AA5829FA2186E0FB003D614D /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AA5829FC2186E103003D614D /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AA5080382186DAF700B866F4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AA5080322186DAF700B866F4 = {
+			isa = PBXGroup;
+			children = (
+				AA50803D2186DAF700B866F4 /* CandiBod */,
+				AA50803C2186DAF700B866F4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AA50803C2186DAF700B866F4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AA50803B2186DAF700B866F4 /* CandiBod.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AA50803D2186DAF700B866F4 /* CandiBod */ = {
+			isa = PBXGroup;
+			children = (
+				AA5080552186DB4700B866F4 /* AppDelegate.swift */,
+				AA5829FA2186E0FB003D614D /* LaunchScreen.storyboard */,
+				AA5829FC2186E103003D614D /* Main.storyboard */,
+				AA5080522186DB4700B866F4 /* Assets.xcassets */,
+				AA5080532186DB4700B866F4 /* Audio */,
+				AA5080602186DB4700B866F4 /* Candibod App-04.png */,
+				AA5080572186DB4700B866F4 /* CandibodLaunch.png */,
+				AA50805D2186DB4700B866F4 /* CandibodLaunch@2.png */,
+				AA5080582186DB4700B866F4 /* CandibodLaunch@3.png */,
+				AA50805C2186DB4700B866F4 /* ExerciseCell.swift */,
+				AA50805F2186DB4700B866F4 /* Extensions.swift */,
+				AA50805E2186DB4700B866F4 /* FullPageFlowLayout.swift */,
+				AA50805A2186DB4700B866F4 /* SizzlerViewController.swift */,
+				AA5080592186DB4700B866F4 /* TimerView.swift */,
+				AA50805B2186DB4700B866F4 /* WorkoutDataSource.swift */,
+				AA5080542186DB4700B866F4 /* WorkoutView.swift */,
+				AA5080502186DB4600B866F4 /* CandiBod-Bridging-Header.h */,
+			);
+			path = CandiBod;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AA50803A2186DAF700B866F4 /* CandiBod */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA50804D2186DAF900B866F4 /* Build configuration list for PBXNativeTarget "CandiBod" */;
+			buildPhases = (
+				AA5080372186DAF700B866F4 /* Sources */,
+				AA5080382186DAF700B866F4 /* Frameworks */,
+				AA5080392186DAF700B866F4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CandiBod;
+			productName = CandiBod;
+			productReference = AA50803B2186DAF700B866F4 /* CandiBod.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AA5080332186DAF700B866F4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "Amanda Baret";
+				TargetAttributes = {
+					AA50803A2186DAF700B866F4 = {
+						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1000;
+					};
+				};
+			};
+			buildConfigurationList = AA5080362186DAF700B866F4 /* Build configuration list for PBXProject "CandiBod" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AA5080322186DAF700B866F4;
+			productRefGroup = AA50803C2186DAF700B866F4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AA50803A2186DAF700B866F4 /* CandiBod */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AA5080392186DAF700B866F4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA5080632186DB4700B866F4 /* Audio in Resources */,
+				AA5829FB2186E0FB003D614D /* LaunchScreen.storyboard in Resources */,
+				AA5080622186DB4700B866F4 /* Assets.xcassets in Resources */,
+				AA5080702186DB4700B866F4 /* Candibod App-04.png in Resources */,
+				AA5080672186DB4700B866F4 /* CandibodLaunch.png in Resources */,
+				AA5829FD2186E103003D614D /* Main.storyboard in Resources */,
+				AA5080682186DB4700B866F4 /* CandibodLaunch@3.png in Resources */,
+				AA50806D2186DB4700B866F4 /* CandibodLaunch@2.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AA5080372186DAF700B866F4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA50806A2186DB4700B866F4 /* SizzlerViewController.swift in Sources */,
+				AA50806B2186DB4700B866F4 /* WorkoutDataSource.swift in Sources */,
+				AA5080692186DB4700B866F4 /* TimerView.swift in Sources */,
+				AA50806F2186DB4700B866F4 /* Extensions.swift in Sources */,
+				AA5080652186DB4700B866F4 /* AppDelegate.swift in Sources */,
+				AA5080642186DB4700B866F4 /* WorkoutView.swift in Sources */,
+				AA50806E2186DB4700B866F4 /* FullPageFlowLayout.swift in Sources */,
+				AA50806C2186DB4700B866F4 /* ExerciseCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		AA50804B2186DAF900B866F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AA50804C2186DAF900B866F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AA50804E2186DAF900B866F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y76VHM7VS6;
+				INFOPLIST_FILE = CandiBod/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.candibod.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CandiBod/CandiBod-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AA50804F2186DAF900B866F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y76VHM7VS6;
+				INFOPLIST_FILE = CandiBod/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.candibod.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CandiBod/CandiBod-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AA5080362186DAF700B866F4 /* Build configuration list for PBXProject "CandiBod" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA50804B2186DAF900B866F4 /* Debug */,
+				AA50804C2186DAF900B866F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA50804D2186DAF900B866F4 /* Build configuration list for PBXNativeTarget "CandiBod" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA50804E2186DAF900B866F4 /* Debug */,
+				AA50804F2186DAF900B866F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AA5080332186DAF700B866F4 /* Project object */;
+}
