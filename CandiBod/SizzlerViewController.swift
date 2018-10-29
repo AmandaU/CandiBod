@@ -78,14 +78,12 @@ class CandiBodViewController: UIViewController ,  AVAudioPlayerDelegate
         self.CloseButton.isEnabled = false
         self.CloseButton.isHidden = true
        
-        self.BrightnessButton.imageView?.setImageColor(color: textColor)
       }
     
     override func viewWillAppear(_ animated: Bool) {
         var i : Int
         i = 0;
-         self.BrightnessButton.imageView?.setImageColor(color: textColor)
-        
+
         for workoutView in WorkoutViewCollection{
             if(i == 0)
             {
