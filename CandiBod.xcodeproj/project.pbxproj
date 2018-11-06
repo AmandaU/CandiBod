@@ -12,17 +12,15 @@
 		AA5080642186DB4700B866F4 /* WorkoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5080542186DB4700B866F4 /* WorkoutView.swift */; };
 		AA5080652186DB4700B866F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5080552186DB4700B866F4 /* AppDelegate.swift */; };
 		AA5080672186DB4700B866F4 /* CandibodLaunch.png in Resources */ = {isa = PBXBuildFile; fileRef = AA5080572186DB4700B866F4 /* CandibodLaunch.png */; };
-		AA5080682186DB4700B866F4 /* CandibodLaunch@3.png in Resources */ = {isa = PBXBuildFile; fileRef = AA5080582186DB4700B866F4 /* CandibodLaunch@3.png */; };
 		AA5080692186DB4700B866F4 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5080592186DB4700B866F4 /* TimerView.swift */; };
-		AA50806A2186DB4700B866F4 /* SizzlerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA50805A2186DB4700B866F4 /* SizzlerViewController.swift */; };
+		AA50806A2186DB4700B866F4 /* CandiBodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA50805A2186DB4700B866F4 /* CandiBodViewController.swift */; };
 		AA50806B2186DB4700B866F4 /* WorkoutDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA50805B2186DB4700B866F4 /* WorkoutDataSource.swift */; };
 		AA50806C2186DB4700B866F4 /* ExerciseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA50805C2186DB4700B866F4 /* ExerciseCell.swift */; };
-		AA50806D2186DB4700B866F4 /* CandibodLaunch@2.png in Resources */ = {isa = PBXBuildFile; fileRef = AA50805D2186DB4700B866F4 /* CandibodLaunch@2.png */; };
 		AA50806E2186DB4700B866F4 /* FullPageFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA50805E2186DB4700B866F4 /* FullPageFlowLayout.swift */; };
 		AA50806F2186DB4700B866F4 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA50805F2186DB4700B866F4 /* Extensions.swift */; };
-		AA5080702186DB4700B866F4 /* Candibod App-04.png in Resources */ = {isa = PBXBuildFile; fileRef = AA5080602186DB4700B866F4 /* Candibod App-04.png */; };
 		AA5829FB2186E0FB003D614D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA5829FA2186E0FB003D614D /* LaunchScreen.storyboard */; };
 		AA5829FD2186E103003D614D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA5829FC2186E103003D614D /* Main.storyboard */; };
+		AA5DEF2B219020B6005D9D2F /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5DEF2A219020B6005D9D2F /* StartViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,17 +31,15 @@
 		AA5080542186DB4700B866F4 /* WorkoutView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkoutView.swift; sourceTree = "<group>"; };
 		AA5080552186DB4700B866F4 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AA5080572186DB4700B866F4 /* CandibodLaunch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CandibodLaunch.png; sourceTree = "<group>"; };
-		AA5080582186DB4700B866F4 /* CandibodLaunch@3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CandibodLaunch@3.png"; sourceTree = "<group>"; };
 		AA5080592186DB4700B866F4 /* TimerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
-		AA50805A2186DB4700B866F4 /* SizzlerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SizzlerViewController.swift; sourceTree = "<group>"; };
+		AA50805A2186DB4700B866F4 /* CandiBodViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CandiBodViewController.swift; sourceTree = "<group>"; };
 		AA50805B2186DB4700B866F4 /* WorkoutDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkoutDataSource.swift; sourceTree = "<group>"; };
 		AA50805C2186DB4700B866F4 /* ExerciseCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExerciseCell.swift; sourceTree = "<group>"; };
-		AA50805D2186DB4700B866F4 /* CandibodLaunch@2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CandibodLaunch@2.png"; sourceTree = "<group>"; };
 		AA50805E2186DB4700B866F4 /* FullPageFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FullPageFlowLayout.swift; sourceTree = "<group>"; };
 		AA50805F2186DB4700B866F4 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
-		AA5080602186DB4700B866F4 /* Candibod App-04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Candibod App-04.png"; sourceTree = "<group>"; };
 		AA5829FA2186E0FB003D614D /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AA5829FC2186E103003D614D /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		AA5DEF2A219020B6005D9D2F /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,18 +77,16 @@
 				AA5829FC2186E103003D614D /* Main.storyboard */,
 				AA5080522186DB4700B866F4 /* Assets.xcassets */,
 				AA5080532186DB4700B866F4 /* Audio */,
-				AA5080602186DB4700B866F4 /* Candibod App-04.png */,
 				AA5080572186DB4700B866F4 /* CandibodLaunch.png */,
-				AA50805D2186DB4700B866F4 /* CandibodLaunch@2.png */,
-				AA5080582186DB4700B866F4 /* CandibodLaunch@3.png */,
 				AA50805C2186DB4700B866F4 /* ExerciseCell.swift */,
 				AA50805F2186DB4700B866F4 /* Extensions.swift */,
 				AA50805E2186DB4700B866F4 /* FullPageFlowLayout.swift */,
-				AA50805A2186DB4700B866F4 /* SizzlerViewController.swift */,
+				AA50805A2186DB4700B866F4 /* CandiBodViewController.swift */,
 				AA5080592186DB4700B866F4 /* TimerView.swift */,
 				AA50805B2186DB4700B866F4 /* WorkoutDataSource.swift */,
 				AA5080542186DB4700B866F4 /* WorkoutView.swift */,
 				AA5080502186DB4600B866F4 /* CandiBod-Bridging-Header.h */,
+				AA5DEF2A219020B6005D9D2F /* StartViewController.swift */,
 			);
 			path = CandiBod;
 			sourceTree = "<group>";
@@ -159,11 +153,8 @@
 				AA5080632186DB4700B866F4 /* Audio in Resources */,
 				AA5829FB2186E0FB003D614D /* LaunchScreen.storyboard in Resources */,
 				AA5080622186DB4700B866F4 /* Assets.xcassets in Resources */,
-				AA5080702186DB4700B866F4 /* Candibod App-04.png in Resources */,
 				AA5080672186DB4700B866F4 /* CandibodLaunch.png in Resources */,
 				AA5829FD2186E103003D614D /* Main.storyboard in Resources */,
-				AA5080682186DB4700B866F4 /* CandibodLaunch@3.png in Resources */,
-				AA50806D2186DB4700B866F4 /* CandibodLaunch@2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -174,11 +165,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA50806A2186DB4700B866F4 /* SizzlerViewController.swift in Sources */,
+				AA50806A2186DB4700B866F4 /* CandiBodViewController.swift in Sources */,
 				AA50806B2186DB4700B866F4 /* WorkoutDataSource.swift in Sources */,
 				AA5080692186DB4700B866F4 /* TimerView.swift in Sources */,
 				AA50806F2186DB4700B866F4 /* Extensions.swift in Sources */,
 				AA5080652186DB4700B866F4 /* AppDelegate.swift in Sources */,
+				AA5DEF2B219020B6005D9D2F /* StartViewController.swift in Sources */,
 				AA5080642186DB4700B866F4 /* WorkoutView.swift in Sources */,
 				AA50806E2186DB4700B866F4 /* FullPageFlowLayout.swift in Sources */,
 				AA50806C2186DB4700B866F4 /* ExerciseCell.swift in Sources */,
@@ -312,6 +304,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Y76VHM7VS6;
 				INFOPLIST_FILE = CandiBod/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -321,7 +314,7 @@
 				SWIFT_OBJC_BRIDGING_HEADER = "CandiBod/CandiBod-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -333,6 +326,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Y76VHM7VS6;
 				INFOPLIST_FILE = CandiBod/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -341,7 +335,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "CandiBod/CandiBod-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

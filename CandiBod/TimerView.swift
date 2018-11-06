@@ -53,7 +53,7 @@ public class TimerView: UIView {
         let startAngle: CGFloat = degreesToRadians(number: -90)
         let endAngle: CGFloat = degreesToRadians(number: 270)
       
-         let middleCircle = UIBezierPath(arcCenter: CGPoint(x: thisRet.midX, y: thisRet.midY), radius: thisRet.width/2 - 4, startAngle: startAngle, endAngle: endAngle, clockwise: true);
+         let middleCircle = UIBezierPath(arcCenter: CGPoint(x: thisRet.midX, y: thisRet.midY), radius: thisRet.width/2 - 5, startAngle: startAngle, endAngle: endAngle, clockwise: true);
         
         shape.fillColor = UIColor.clear.cgColor;
         shape.strokeColor = strokeColor.cgColor;
