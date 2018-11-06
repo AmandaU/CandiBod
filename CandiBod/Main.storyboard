@@ -125,7 +125,7 @@
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="21" id="iRn-gM-JIb"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="13"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -133,13 +133,13 @@
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstItem="FY8-0t-mAv" firstAttribute="leading" secondItem="tSg-aY-UC1" secondAttribute="trailing" constant="1" id="0gX-OO-i4D"/>
-                                            <constraint firstItem="4gg-Ym-auu" firstAttribute="leading" secondItem="CQe-G3-3HU" secondAttribute="leading" constant="1" id="8z4-7u-kg5"/>
+                                            <constraint firstItem="4gg-Ym-auu" firstAttribute="leading" secondItem="CQe-G3-3HU" secondAttribute="leading" constant="5" id="8z4-7u-kg5"/>
                                             <constraint firstItem="tSg-aY-UC1" firstAttribute="centerY" secondItem="CQe-G3-3HU" secondAttribute="centerY" id="D3v-rP-hgZ"/>
                                             <constraint firstItem="tSg-aY-UC1" firstAttribute="leading" secondItem="4gg-Ym-auu" secondAttribute="trailing" constant="1" id="GHh-Lp-Anf"/>
                                             <constraint firstAttribute="height" constant="50" id="URv-GS-gJH"/>
                                             <constraint firstItem="GHS-4n-Lus" firstAttribute="leading" secondItem="CQe-G3-3HU" secondAttribute="leading" constant="30" id="eTq-cY-aU5"/>
                                             <constraint firstAttribute="trailing" secondItem="GHS-4n-Lus" secondAttribute="trailing" constant="30" id="jT9-C0-36j"/>
-                                            <constraint firstItem="FY8-0t-mAv" firstAttribute="centerY" secondItem="CQe-G3-3HU" secondAttribute="centerY" id="lAz-nV-xWz"/>
+                                            <constraint firstItem="FY8-0t-mAv" firstAttribute="centerY" secondItem="CQe-G3-3HU" secondAttribute="centerY" constant="5" id="lAz-nV-xWz"/>
                                             <constraint firstItem="GHS-4n-Lus" firstAttribute="centerY" secondItem="CQe-G3-3HU" secondAttribute="centerY" id="waB-ar-nvP"/>
                                             <constraint firstItem="4gg-Ym-auu" firstAttribute="centerY" secondItem="CQe-G3-3HU" secondAttribute="centerY" id="za6-lq-7e0"/>
                                             <constraint firstAttribute="trailing" secondItem="FY8-0t-mAv" secondAttribute="trailing" constant="1" id="zyH-wh-4K2"/>

@@ -43,6 +43,7 @@ class CandiBodViewController: UIViewController ,  AVAudioPlayerDelegate
     var isPaused = false
     var isDoing321Timer = false;
     var hasWorkoutBegun = false
+     var hasWorkoutEnded = false
     var isDoingIntro = false
     var isDimmed = false
     var playImage = UIImage(named: "Play")
@@ -114,6 +115,7 @@ class CandiBodViewController: UIViewController ,  AVAudioPlayerDelegate
         
         let alert = UIAlertController(title: "Had enough?", message: "Stop " + self.workout.title, preferredStyle: UIAlertController.Style.alert)
         alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { action in
+             self.hasWorkoutEnded = false
             self.EndWorkout()
         }))
         
@@ -273,7 +275,7 @@ class CandiBodViewController: UIViewController ,  AVAudioPlayerDelegate
     
     func EndWorkout()
     {
-        timer.invalidate()
+       timer.invalidate()
         stopSound()
         isPaused = false
         hasWorkoutBegun = false
@@ -298,6 +300,7 @@ class CandiBodViewController: UIViewController ,  AVAudioPlayerDelegate
         }
         else
         {
+            hasWorkoutEnded = false
             RunWorkout()
         }
     }
@@ -335,7 +338,20 @@ class CandiBodViewController: UIViewController ,  AVAudioPlayerDelegate
             {
                 self.UpdateTime(timelimit: self.fullTime, timeleft: self.timeleft)
                 self.exerciseCounter += 1
+                 if(self.exerciseCounter == self.workout.exercises.count )
+                 {
+                     self.hasWorkoutEnded = true
+                    self.EndWorkout()
+                     self.playSound(audioFile: self.workout.endAudio);
+                    return
+                }
+                 if(self.exerciseCounter > self.workout.exercises.count )
+                 {
+                return
+                }
+                
                 self.currentExercise = self.workout.exercises[self.exerciseCounter]
+                
                 self.timeleft = self.currentExercise.time
                 self.fullTime = self.currentExercise.time
                 self.setTime(time: self.fullTime)
@@ -346,7 +362,7 @@ class CandiBodViewController: UIViewController ,  AVAudioPlayerDelegate
              self.RefreshCounterLabels()
             self.UpdateTime(timelimit: self.fullTime, timeleft:  self.timeleft )
             
-            if(self.fullTime - self.timeleft == 2)
+            if(self.fullTime - self.timeleft == 1)
             {
                 if(!(self.currentExercise.startaudio ?? "").isEmpty)
                 {
@@ -369,7 +385,7 @@ class CandiBodViewController: UIViewController ,  AVAudioPlayerDelegate
     
     func playSound(audioFile: String) {
         
-        
+        /*
         let path = Bundle.main.path(forResource: audioFile, ofType: "wav",inDirectory: "Audio")
         let url = URL(fileURLWithPath: path ?? "")
         
@@ -379,8 +395,9 @@ class CandiBodViewController: UIViewController ,  AVAudioPlayerDelegate
         } catch let error {
             print(error.localizedDescription)
         }
+ */
         
-        /*
+        
         guard let url = Bundle.main.url(forResource: audioFile, withExtension: "wav", subdirectory: "Audio") else
         {
             return
@@ -403,7 +420,7 @@ class CandiBodViewController: UIViewController ,  AVAudioPlayerDelegate
         } catch let error {
             print(error.localizedDescription)
         }
- */
+ 
     }
     
     func stopSound() {
@@ -414,6 +431,11 @@ class CandiBodViewController: UIViewController ,  AVAudioPlayerDelegate
     
     func audioPlayerDidFinishPlaying(_ player: AVAudioPlayer, successfully flag: Bool) {
         
+        if(self.hasWorkoutEnded)
+        {
+            self.hasWorkoutEnded = false
+            return
+        }
         if(self.hasWorkoutBegun)
         {
             return
