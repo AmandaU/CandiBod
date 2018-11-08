@@ -8,6 +8,8 @@
 
 import UIKit
 import AVFoundation
+import MediaPlayer
+import AudioToolbox
 
 class CandiBodViewController: UIViewController ,  AVAudioPlayerDelegate
 {
@@ -74,6 +76,7 @@ class CandiBodViewController: UIViewController ,  AVAudioPlayerDelegate
         playImage?.accessibilityIdentifier = "Play"
         pauseImage?.accessibilityIdentifier = "Pause"
        
+        registerForNotifications()
       }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -308,7 +311,12 @@ class CandiBodViewController: UIViewController ,  AVAudioPlayerDelegate
     fileprivate func Do321Counter() {
         isDoing321Timer = true
         three21Counter = 3;
-        self.playSound(audioFile: "321Go");
+        
+        if(!(self.workout.endAudio ?? "").isEmpty)
+        {
+            self.playSound(audioFile: self.workout.endAudio)
+        }
+        
         self.SetTimeNoDelay(time:  three21Counter)
         (self.timerView as? TimerView)?.AnimateTime(timedoneratio: 0 )
         self.timer =  Timer.scheduledTimer(withTimeInterval: 1, repeats: true)
@@ -332,7 +340,11 @@ class CandiBodViewController: UIViewController ,  AVAudioPlayerDelegate
    
     func RunWorkout()
     {
-        self.timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { _ in
+        var  bgRideTimerTask = UIBackgroundTaskIdentifier.invalid;
+      
+        bgRideTimerTask = UIApplication.shared.beginBackgroundTask()
+        
+       self.timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { _ in
           
             if(self.timeleft == 0)
             {
@@ -342,7 +354,7 @@ class CandiBodViewController: UIViewController ,  AVAudioPlayerDelegate
                  {
                      self.hasWorkoutEnded = true
                     self.EndWorkout()
-                     self.playSound(audioFile: self.workout.endAudio);
+                     self.playSound(audioFile: "WorkoutComplete");
                     return
                 }
                  if(self.exerciseCounter > self.workout.exercises.count )
@@ -371,16 +383,21 @@ class CandiBodViewController: UIViewController ,  AVAudioPlayerDelegate
             }
             if(!self.currentExercise.isBreak && self.timeleft == self.fullTime/2 - 1  )
             {
-               self.playSound(audioFile: "you got this");
+               self.playSound(audioFile: "yougotthis");
               
             }
             if(self.timeleft == 3)
             {
-               self.playSound(audioFile: self.currentExercise.endAudio)
+                if(!(self.currentExercise.endAudio ?? "").isEmpty)
+                {
+                    self.playSound(audioFile: self.currentExercise.endAudio)
+                }
             }
          
               self.timeleft -= 1
         }
+        
+        RunLoop.current.add( timer , forMode: RunLoop.Mode.tracking);
     }
     
     func playSound(audioFile: String) {
@@ -397,15 +414,23 @@ class CandiBodViewController: UIViewController ,  AVAudioPlayerDelegate
         }
  */
         
-        
         guard let url = Bundle.main.url(forResource: audioFile, withExtension: "wav", subdirectory: "Audio") else
         {
             return
         }
         
-        do {
-           // try AVAudioSession.sharedInstance().category = AVAudioSession.Category.playback
-           // try AVAudioSession.sharedInstance().setActive(true)
+        do
+        {
+           let session = AVAudioSession.sharedInstance()
+            
+            try!session.setCategory(AVAudioSession.Category.playback, mode: .default, options: [.duckOthers])
+           //try session.setCategory(AVAudioSession.Category.ambient,  mode: .default,  options: [])
+            //try session.setCategory(.playback, mode: .default,  policy: .longForm, options: [.mixWithOthers, .allowAirPlay])
+            
+           //try session.setCategory(.playback, mode: .default,  policy: .default, options: [.mixWithOthers, .allowAirPlay])
+            print("Playback OK")
+            try session.setActive(true)
+           
             
             /* The following line is required for the player to work on iOS 11. Change the file type accordingly*/
             player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileType.mp3.rawValue)
@@ -418,11 +443,13 @@ class CandiBodViewController: UIViewController ,  AVAudioPlayerDelegate
             player!.play()
             
         } catch let error {
+            
             print(error.localizedDescription)
         }
  
     }
     
+   
     func stopSound() {
         
         self.player?.stop()
@@ -430,6 +457,13 @@ class CandiBodViewController: UIViewController ,  AVAudioPlayerDelegate
     }
     
     func audioPlayerDidFinishPlaying(_ player: AVAudioPlayer, successfully flag: Bool) {
+        /*
+        do {
+            try AVAudioSession.sharedInstance().setActive(false, options: .notifyOthersOnDeactivation)
+        } catch {
+            print ("setActive(false) ERROR : \(error)")
+        }
+ */
         
         if(self.hasWorkoutEnded)
         {
@@ -473,5 +507,29 @@ class CandiBodViewController: UIViewController ,  AVAudioPlayerDelegate
         alertController.addAction(cancelAction)
         
         vc.present(alertController, animated: true, completion: nil)
+    }
+    
+    func registerForNotifications() {
+        NotificationCenter.default.addObserver(self,
+                                               selector: #selector(handleInterruption),
+                                               name: AVAudioSession.interruptionNotification,
+                                               object: AVAudioSession.sharedInstance())
+    }
+    
+    @objc func handleInterruption(_ notification: Notification) {
+        guard let info = notification.userInfo,
+            let typeValue = info[AVAudioSessionInterruptionTypeKey] as? UInt,
+            let type = AVAudioSession.InterruptionType(rawValue: typeValue) else {
+                return
+        }
+        if type == .began {
+            isPaused = true
+            timer.invalidate()
+           
+        }
+        else if type == .ended {
+            self.Restart()
+           
+        }
     }
 }
