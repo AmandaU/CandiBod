@@ -140,7 +140,7 @@ class WorkoutDataSource{
         let W1C1Exercise15 = Exercise(counter: "15/15",title: "", roundCount: 2, roundCounter: 1,time: 60, startaudio: "",  endaudio: "1minBreak")
         W1C1Exercises.append(W1C1Exercise15)
         
-        let W1Break = Exercise(counter: "15/15",title: "", roundCount: 2, roundCounter: 1,time: 60, startaudio: "",  endaudio: "321EX2", isBreak: true)
+        let W1Break = Exercise(counter: "15/15",title: "Take a break", roundCount: 2, roundCounter: 1,time: 60, startaudio: "",  endaudio: "321EX1", isBreak: true)
         W1C1Exercises.append(W1Break)
         
         
@@ -289,7 +289,7 @@ class WorkoutDataSource{
         W2C1Exercises.append(W2C5Exercise6)
      
         //Workouts
-        let W2 = Workout(index: 1, title: "Bod Burner", startAudio: "BodBurnerWelcome", endAudio: "superset2ex1", exercises:W2C1Exercises, exerciseCount: 2 , backgroundColor: seagreen )
+        let W2 = Workout(index: 1, title: "Bod Burner", startAudio: "BodBurnerWelcome", endAudio: "superset1ex1", exercises:W2C1Exercises, exerciseCount: 2 , backgroundColor: seagreen )
       
         //3
        
@@ -557,7 +557,7 @@ class WorkoutDataSource{
         let W5C1Exercise12 = Exercise(counter: "4/4",title: "Circuit 1", roundCount: 3, roundCounter: 3,time: 30, startaudio: "",  endaudio: "30sBreak")
         W5C1Exercises.append(W5C1Exercise12)
  
-        let W5Break = Exercise(counter: "4/4",title: "Take a break", roundCount: 3, roundCounter: 3,time: 30, startaudio: "",  endaudio: "321EX1", isBreak: true)
+        let W5Break = Exercise(counter: "4/4",title: "Take a break", roundCount: 3, roundCounter: 3,time: 30, startaudio: "",  endaudio: "circuit2ex1", isBreak: true)
         W5C1Exercises.append(W5Break)
         
         //Circuit2
@@ -601,7 +601,10 @@ class WorkoutDataSource{
         let W5C2Exercise12 = W5C1Exercise12.copy() as! Exercise
         W5C2Exercise12.title = "Circuit 2"
         W5C1Exercises.append(W5C2Exercise12)
-       W5C1Exercises.append(W5Break)
+        let W5C2Break = W5Break.copy() as! Exercise
+        W5C2Break.isBreak = true
+        W5C2Break.endAudio = "circuit3ex1"
+        W5C1Exercises.append(W5C2Break)
         
         //Circuit3
         let W5C3Exercise1 = W5C1Exercise1.copy() as! Exercise
@@ -642,7 +645,11 @@ class WorkoutDataSource{
         let W5C3Exercise12 = W5C1Exercise12.copy() as! Exercise
         W5C3Exercise12.title = "Circuit 3"
         W5C1Exercises.append(W5C3Exercise12)
-        W5C1Exercises.append(W5Break)
+        let W5C3Break = W5Break.copy() as! Exercise
+        W5C3Break.isBreak = true
+        W5C3Break.endAudio = "circuit4ex1"
+        W5C1Exercises.append(W5C3Break)
+       
         
         //Circuit4
         

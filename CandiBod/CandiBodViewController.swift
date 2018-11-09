@@ -371,7 +371,7 @@ class CandiBodViewController: UIViewController ,  AVAudioPlayerDelegate
                 return
                 
             }
-             self.RefreshCounterLabels()
+            self.RefreshCounterLabels()
             self.UpdateTime(timelimit: self.fullTime, timeleft:  self.timeleft )
             
             if(self.fullTime - self.timeleft == 1)
@@ -443,12 +443,9 @@ class CandiBodViewController: UIViewController ,  AVAudioPlayerDelegate
             player!.play()
             
         } catch let error {
-            
             print(error.localizedDescription)
         }
- 
     }
-    
    
     func stopSound() {
         
@@ -457,14 +454,13 @@ class CandiBodViewController: UIViewController ,  AVAudioPlayerDelegate
     }
     
     func audioPlayerDidFinishPlaying(_ player: AVAudioPlayer, successfully flag: Bool) {
-        /*
+        
         do {
             try AVAudioSession.sharedInstance().setActive(false, options: .notifyOthersOnDeactivation)
         } catch {
             print ("setActive(false) ERROR : \(error)")
         }
- */
-        
+      
         if(self.hasWorkoutEnded)
         {
             self.hasWorkoutEnded = false
@@ -525,7 +521,6 @@ class CandiBodViewController: UIViewController ,  AVAudioPlayerDelegate
         if type == .began {
             isPaused = true
             timer.invalidate()
-           
         }
         else if type == .ended {
             self.Restart()
