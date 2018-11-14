@@ -119,7 +119,8 @@ class CandiBodViewController: UIViewController ,  AVAudioPlayerDelegate
         let alert = UIAlertController(title: "Had enough?", message: "Stop " + self.workout.title, preferredStyle: UIAlertController.Style.alert)
         alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { action in
              self.hasWorkoutEnded = false
-            self.EndWorkout()
+            self.stopSound()
+             self.EndWorkout()
         }))
         
         alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: { action in
@@ -279,8 +280,7 @@ class CandiBodViewController: UIViewController ,  AVAudioPlayerDelegate
     func EndWorkout()
     {
        timer.invalidate()
-        stopSound()
-        isPaused = false
+       isPaused = false
         hasWorkoutBegun = false
         isDoingIntro = false
         CloseButton.isEnabled = false
@@ -353,8 +353,8 @@ class CandiBodViewController: UIViewController ,  AVAudioPlayerDelegate
                  if(self.exerciseCounter == self.workout.exercises.count )
                  {
                      self.hasWorkoutEnded = true
-                    self.EndWorkout()
-                     self.playSound(audioFile: "WorkoutComplete");
+                     self.EndWorkout()
+                    // self.playSound(audioFile: "WorkoutComplete");
                     return
                 }
                  if(self.exerciseCounter > self.workout.exercises.count )

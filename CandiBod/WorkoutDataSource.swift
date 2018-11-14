@@ -109,7 +109,7 @@ class WorkoutDataSource{
         //Exercises
         let W1C1Exercise1 = Exercise(counter: "1/15", title: "", roundCount: 2, roundCounter: 1,time: 60, startaudio: "", endaudio: "321EX2")
         W1C1Exercises.append(W1C1Exercise1)
-       
+     
         let W1C1Exercise2 = Exercise(counter: "2/15",title: "", roundCount: 2, roundCounter: 1,time: 60, startaudio: "", endaudio: "321EX3")
         W1C1Exercises.append(W1C1Exercise2)
         let W1C1Exercise3 = Exercise(counter: "3/15",title: "", roundCount: 2, roundCounter: 1,time: 60, startaudio: "",  endaudio: "321EX4")
@@ -174,7 +174,7 @@ class WorkoutDataSource{
         let W1C1Exercise29 = Exercise(counter: "14/15",title: "", roundCount: 2, roundCounter: 2,time: 60, startaudio: "",  endaudio: "321EXlast")
         W1C1Exercises.append(W1C1Exercise29)
 
-        let W1C1Exercise30 = Exercise(counter: "15/15",title: "", roundCount: 2, roundCounter: 2,time: 60, startaudio: "",  endaudio: "")
+        let W1C1Exercise30 = Exercise(counter: "15/15",title: "", roundCount: 2, roundCounter: 2,time: 60, startaudio: "",  endaudio: "WorkoutComplete")
         W1C1Exercises.append(W1C1Exercise30)
         
        
@@ -187,7 +187,7 @@ class WorkoutDataSource{
         
         let W2C1Exercise1 = Exercise(counter: "1/2", title: "Superset 1", roundCount: 3, roundCounter: 1,time: 60, startaudio: "",  endaudio: "321EX2")
         W2C1Exercises.append(W2C1Exercise1)
-       
+      
         let W2C1Exercise2 = Exercise(counter: "2/2",title: "Superset 1", roundCount: 3, roundCounter: 1,time: 60, startaudio: "",  endaudio: "321EX1")
         W2C1Exercises.append(W2C1Exercise2)
         let W2C1Exercise3 = Exercise(counter: "1/2",title: "Superset 1", roundCount: 3, roundCounter: 2,time: 60, startaudio: "",  endaudio: "321EX2")
@@ -221,6 +221,7 @@ class WorkoutDataSource{
          W2C1Exercises.append(W2C2Exercise6)
         let W2Break2 = W2Break.copy() as! Exercise
          W2Break2.endAudio = "superset3ex1"
+        W2Break2.isBreak = true
         W2C1Exercises.append(W2Break2)
         
         let W2C3Exercise1 = W2C1Exercise1.copy() as! Exercise
@@ -243,6 +244,7 @@ class WorkoutDataSource{
         W2C1Exercises.append(W2C3Exercise6)
         let W2Break3 = W2Break.copy() as! Exercise
         W2Break3.endAudio = "superset4ex1"
+        W2Break3.isBreak = true
         W2C1Exercises.append(W2Break3)
         
         let W2C4Exercise1 = W2C1Exercise1.copy() as! Exercise
@@ -265,6 +267,7 @@ class WorkoutDataSource{
         W2C1Exercises.append(W2C4Exercise6)
         let W2Break4 = W2Break.copy() as! Exercise
         W2Break4.endAudio = "superset5ex1"
+        W2Break4.isBreak = true
         W2C1Exercises.append(W2Break4)
         
         let W2C5Exercise1 = W2C1Exercise1.copy() as! Exercise
@@ -285,7 +288,7 @@ class WorkoutDataSource{
         let W2C5Exercise6 = W2C1Exercise6.copy() as! Exercise
         W2C5Exercise6.title = "Superset 5"
         W2C5Exercise6.startaudio = ""
-        W2C5Exercise6.endAudio = ""
+        W2C5Exercise6.endAudio = "WorkoutComplete"
         W2C1Exercises.append(W2C5Exercise6)
      
         //Workouts
@@ -294,28 +297,36 @@ class WorkoutDataSource{
         //3
        
         //Exercises
-        let W3C1Exercise1 = Exercise(counter: "1/10", title: "", roundCount: 1, roundCounter: 1,time: 60, startaudio: "",  endaudio: "321EX2")
+        let W3C1Exercise1 = Exercise(counter: "1/15", title: "", roundCount: 1, roundCounter: 1,time: 60, startaudio: "",  endaudio: "321EX2")
         W3C1Exercises.append(W3C1Exercise1)
-        let W3C1Exercise2 = Exercise(counter: "2/10",title: "", roundCount: 1, roundCounter: 1,time: 60, startaudio: "",  endaudio: "321EX3")
+        let W3C1Exercise2 = Exercise(counter: "2/15",title: "", roundCount: 1, roundCounter: 1,time: 60, startaudio: "",  endaudio: "321EX3")
         W3C1Exercises.append(W3C1Exercise2)
-        let W3C1Exercise3 = Exercise(counter: "3/10",title: "", roundCount: 1, roundCounter: 1,time: 60, startaudio: "",  endaudio: "321EX4")
+        let W3C1Exercise3 = Exercise(counter: "3/15",title: "", roundCount: 1, roundCounter: 1,time: 60, startaudio: "",  endaudio: "321EX4")
         W3C1Exercises.append(W3C1Exercise3)
-        let W3C1Exercise4 = Exercise(counter: "4/10",title: "", roundCount: 1, roundCounter: 1,time: 60, startaudio: "",  endaudio: "321EX5")
+        let W3C1Exercise4 = Exercise(counter: "4/15",title: "", roundCount: 1, roundCounter: 1,time: 60, startaudio: "",  endaudio: "321EX5")
         W3C1Exercises.append(W3C1Exercise4)
-        let W3C1Exercise5 = Exercise(counter: "5/10",title: "", roundCount: 1, roundCounter: 1,time: 60, startaudio: "",  endaudio: "321EX6")
+        let W3C1Exercise5 = Exercise(counter: "5/15",title: "", roundCount: 1, roundCounter: 1,time: 60, startaudio: "",  endaudio: "321EX6")
         W3C1Exercises.append(W3C1Exercise5)
-        let W3C1Exercise6 = Exercise(counter: "6/10",title: "", roundCount: 1, roundCounter: 1,time: 60, startaudio: "",  endaudio: "321EX7")
+        let W3C1Exercise6 = Exercise(counter: "6/15",title: "", roundCount: 1, roundCounter: 1,time: 60, startaudio: "",  endaudio: "321EX7")
         W3C1Exercises.append(W3C1Exercise6)
-        let W3C1Exercise7 = Exercise(counter: "7/10",title: "", roundCount: 1, roundCounter: 1,time: 60, startaudio: "",  endaudio: "321EX8")
+        let W3C1Exercise7 = Exercise(counter: "7/15",title: "", roundCount: 1, roundCounter: 1,time: 60, startaudio: "",  endaudio: "321EX8")
         W3C1Exercises.append(W3C1Exercise7)
-        let W3C1Exercise8 = Exercise(counter: "8/10",title: "", roundCount: 1, roundCounter: 1,time: 60, startaudio: "",  endaudio: "321EX9")
+        let W3C1Exercise8 = Exercise(counter: "8/15",title: "", roundCount: 1, roundCounter: 1,time: 60, startaudio: "",  endaudio: "321EX9")
         W3C1Exercises.append(W3C1Exercise8)
-        let W3C1Exercise9 = Exercise(counter: "9/10",title: "", roundCount: 1, roundCounter: 1,time: 60, startaudio: "",  endaudio: "321EXlast")
+        let W3C1Exercise9 = Exercise(counter: "9/15",title: "", roundCount: 1, roundCounter: 1,time: 60, startaudio: "",  endaudio: "321EX10")
         W3C1Exercises.append(W3C1Exercise9)
-        let W3C1Exercise10 = Exercise(counter: "10/10",title: "", roundCount: 1, roundCounter: 1,time: 60, startaudio: "",  endaudio: "")
+        let W3C1Exercise10 = Exercise(counter: "10/15",title: "", roundCount: 1, roundCounter: 1,time: 60, startaudio: "",  endaudio: "321EX11")
         W3C1Exercises.append(W3C1Exercise10)
-        let FiveMin = Exercise(counter: "1/1ta",title: "5 min extra time", roundCount: 1, roundCounter: 1,time: 300, startaudio: "",  endaudio: "")
-        W3C1Exercises.append(FiveMin)
+        let MinExtra1 = Exercise(counter: "11/15",title: "5 min extra time", roundCount: 1, roundCounter: 1,time: 60, startaudio: "",  endaudio: "321EX12")
+        W3C1Exercises.append(MinExtra1)
+        let MinExtra2 = Exercise(counter: "12/15",title: "5 min extra time", roundCount: 1, roundCounter: 1,time: 60, startaudio: "",  endaudio: "321EX13")
+        W3C1Exercises.append(MinExtra2)
+        let MinExtra3 = Exercise(counter: "13/15",title: "5 min extra time", roundCount: 1, roundCounter: 1,time: 60, startaudio: "",  endaudio: "321EX14")
+        W3C1Exercises.append(MinExtra3)
+        let MinExtra4 = Exercise(counter: "14/15",title: "5 min extra time", roundCount: 1, roundCounter: 1,time: 60, startaudio: "",  endaudio: "321EXlast")
+        W3C1Exercises.append(MinExtra4)
+        let MinExtra5 = Exercise(counter: "15/15",title: "5 min extra time", roundCount: 1, roundCounter: 1,time: 60, startaudio: "",  endaudio: "WorkoutComplete")
+        W3C1Exercises.append(MinExtra5)
         
         //workouts
         let W3 = Workout(index: 2, title: "Personal Challenge", startAudio: "PersonalChallengeWelcome", endAudio: "321EX1", exercises: W3C1Exercises,  exerciseCount: 10 , backgroundColor: gold )
@@ -516,7 +527,7 @@ class WorkoutDataSource{
         W4C1Exercises.append(W4C4Break6)
        
         let W4C1ExerciseLast = W4C1Exercise7.copy() as! Exercise
-        W4C1ExerciseLast.endAudio = ""
+        W4C1ExerciseLast.endAudio = "WorkoutComplete"
         W4C1ExerciseLast.roundCounter = 4
         W4C1Exercises.append(W4C1ExerciseLast)
        
@@ -581,7 +592,7 @@ class WorkoutDataSource{
         W5C1Exercises.append(W5C2Exercise5)
         let W5C2Exercise6 = W5C1Exercise6.copy() as! Exercise
         W5C2Exercise6.title = "Circuit 2"
-        W5C1Exercises.append(W5C1Exercise6)
+        W5C1Exercises.append(W5C2Exercise6)
         let W5C2Exercise7 = W5C1Exercise7.copy() as! Exercise
         W5C2Exercise7.title = "Circuit 2"
         W5C1Exercises.append(W5C2Exercise7)
@@ -638,7 +649,7 @@ class WorkoutDataSource{
         W5C1Exercises.append(W5C3Exercise9)
         let W5C3Exercise10 = W5C1Exercise10.copy() as! Exercise
         W5C3Exercise10.title = "Circuit 3"
-        W5C1Exercises.append(W5C2Exercise10)
+        W5C1Exercises.append(W5C3Exercise10)
         let W5C3Exercise11 = W5C1Exercise11.copy() as! Exercise
         W5C3Exercise11.title = "Circuit 3"
         W5C1Exercises.append(W5C3Exercise11)
@@ -690,7 +701,7 @@ class WorkoutDataSource{
         W5C1Exercises.append(W5C4Exercise11)
         let W5C4ExerciseLast = W5C1Exercise12.copy() as! Exercise
         W5C4ExerciseLast.title = "Circuit 4"
-        W5C4ExerciseLast.endAudio = ""
+        W5C4ExerciseLast.endAudio = "WorkoutComplete"
         W5C1Exercises.append(W5C4ExerciseLast)
        
       //Workouts
